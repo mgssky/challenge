@@ -1,7 +1,5 @@
 import VPlay 2.0
 import QtQuick 2.0
-import "scenes"
-import "entities"
 
 GameWindow {
   id: gameWindow
