@@ -18,7 +18,7 @@ EntityBase{
 
       mirrorX: !goingRight
 
-      defaultSource: "../../assets/animation_tractor_full.png"
+      defaultSource: "../assets/animation_tractor_full.png"
 
       SpriteVPlay {
         name: "goingAnim"
