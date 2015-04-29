@@ -12,7 +12,7 @@ EntityBase {
     anchors.centerIn: gameScene
     x: -45
     height: 256
-    defaultSource: "../../assets/bolt.png"
+    defaultSource: "../assets/bolt.png"
     visible: gameScene.thunderStrike
     SpriteVPlay {
       frameRate: 10
@@ -26,7 +26,7 @@ EntityBase {
   ParticleVPlay {
               anchors.centerIn: parent
               id: collisionParticleEffect
-              fileName: "../../assets/cloud.json"
+              fileName: "../assets/cloud.json"
               autoStart: true
           }
 
