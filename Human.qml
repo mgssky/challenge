@@ -16,7 +16,7 @@ EntityBase{
       height: 48
       mirrorX: !goingRight
 
-      defaultSource: Math.random()*100 > 50 ? "../../assets/animation_man_full.png" : "../../assets/animation_man_full_green.png"
+      defaultSource: Math.random()*100 > 50 ? "../assets/animation_man_full.png" : "../assets/animation_man_full_green.png"
 
       SpriteVPlay {
         name: "goingAnim"
