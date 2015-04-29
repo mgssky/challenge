@@ -1,6 +1,5 @@
 import VPlay 2.0
 import QtQuick 2.0
-import "../entities"
 
 SceneBase {
   id:gameScene
@@ -28,7 +27,7 @@ SceneBase {
   Image {
       id: background
       anchors.fill: parent.gameWindowAnchorItem
-      source: "../../assets/background.png"
+      source: "../assets/background.png"
 
   }
 
@@ -115,10 +114,10 @@ SceneBase {
 
 
         // score sound
-        SoundEffectVPlay {id: scoreSound; source:"../../assets/Stomp.wav"}
+        SoundEffectVPlay {id: scoreSound; source:"../assets/Stomp.wav"}
 
         // background music
-        BackgroundMusic {source:"../../assets/music.mp3"}
+        BackgroundMusic {source:"../assets/music.mp3"}
 
         //this method spawns 2 tractors and 4 human before the game starts
         Timer {
@@ -126,9 +125,9 @@ SceneBase {
             running: true
             repeat: true
             onTriggered: {
-              entityManager.createEntityFromUrl(Qt.resolvedUrl("../entities/Tractor.qml"));
-              entityManager.createEntityFromUrl(Qt.resolvedUrl("../entities/Human.qml"));
-                entityManager.createEntityFromUrl(Qt.resolvedUrl("../entities/Human.qml"));
+              entityManager.createEntityFromUrl(Qt.resolvedUrl("Tractor.qml"));
+              entityManager.createEntityFromUrl(Qt.resolvedUrl("Human.qml"));
+                entityManager.createEntityFromUrl(Qt.resolvedUrl("Human.qml"));
               targets++
 
               if(targets === 2) {
