@@ -27,7 +27,7 @@ EntityBase {
 
   Image {
     id: groundImage
-    source: "../../assets/ground.png"
+    source: "../assets/ground.png"
 
   }
 
